@@ -7,7 +7,7 @@ name = "outpress"
 version = "0.1.0"
 description = "Terminal output compressor for AI agents - strips stack traces, progress bars, and boilerplate logs."
 readme = "README.md"
-requires-python = ">=3.8"
+requires-python = ">=3.9"
 license = { text = "MIT" }
 authors = [
     { name = "Anubhav Jha", email = "jhaanubhav3110@gmail.com" },
