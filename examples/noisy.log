@@ -1,0 +1,38 @@
+[12:00:01] Starting build
+[12:00:01] Starting build
+[12:00:01] Starting build
+[12:00:02] Compiling src/a.py
+[12:00:03] Compiling src/b.py
+[12:00:04] Compiling src/c.py
+[12:00:04] Compiling src/c.py
+[12:00:04] Compiling src/c.py
+[12:00:04] Compiling src/c.py
+[12:00:04] Compiling src/c.py
+[12:00:05] Linking objects 10%
+[12:00:05] Linking objects 25%
+[12:00:05] Linking objects 40%
+[12:00:05] Linking objects 55%
+[12:00:05] Linking objects 70%
+[12:00:05] Linking objects 85%
+[12:00:05] Linking objects 100%
+[12:00:06] Build succeeded
+Traceback (most recent call last):
+  File "build.py", line 10, in <module>
+    run()
+  File "build.py", line 20, in run
+    compile_all()
+  File "build.py", line 30, in compile_all
+    raise BuildError("failed")
+  File "build.py", line 10, in <module>
+    run()
+  File "build.py", line 20, in run
+    compile_all()
+  File "build.py", line 30, in compile_all
+    raise BuildError("failed")
+  File "build.py", line 10, in <module>
+    run()
+  File "build.py", line 20, in run
+    compile_all()
+  File "build.py", line 30, in compile_all
+    raise BuildError("failed")
+BuildError: failed

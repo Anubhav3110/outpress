@@ -1,0 +1,41 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "outpress"
+version = "0.1.0"
+description = "Terminal output compressor for AI agents - strips stack traces, progress bars, and boilerplate logs."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [
+    { name = "Anubhav Jha", email = "jhaanubhav3110@gmail.com" },
+]
+keywords = ["cli", "terminal", "output", "compress", "llm", "agent", "logs", "summarize"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Topic :: Utilities",
+]
+
+[project.scripts]
+outpress = "outpress.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/Anubhav3110/outpress"
+Repository = "https://github.com/Anubhav3110/outpress"
+Issues = "https://github.com/Anubhav3110/outpress/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/outpress"]
+
+[tool.hatch.build.targets.sdist]
+include = ["src/outpress", "tests", "README.md", "LICENSE"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
